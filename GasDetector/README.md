@@ -19,6 +19,9 @@ When the sensor detects a gas concentration above a certain threshold, an **LED*
 ---
 
 ## ⚡ Circuit Diagram
+<img width="1097" height="592" alt="image" src="https://github.com/user-attachments/assets/a27cc07b-4dce-41b2-b4e8-4dadce5507ec" />
+
+
 - **MQ2 Sensor → Arduino**
   - VCC → 5V  
   - GND → GND  
