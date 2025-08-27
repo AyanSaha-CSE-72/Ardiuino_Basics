@@ -45,48 +45,7 @@ When the sensor detects a gas concentration above a certain threshold, an **LED*
 
 ---
 
-## 💻 Arduino Code
 
-```cpp
-// Gas Leak Detection and Alarm System using MQ2 Sensor
-
-const int gasSensorPin = A0;  // MQ2 Analog output pin connected to A0
-const int ledPin = 13;        // LED connected to digital pin 13
-const int buzzerPin = 12;     // Buzzer connected to digital pin 12
-
-int gasSensorValue = 0;       // Variable to store sensor reading
-int threshold = 300;          // Threshold for gas detection
-
-void setup() {
-  pinMode(ledPin, OUTPUT);    
-  pinMode(buzzerPin, OUTPUT); 
-  Serial.begin(9600);         // Initialize serial monitor
-}
-
-void loop() {
-  gasSensorValue = analogRead(gasSensorPin); 
-  
-  Serial.print("Gas Sensor Value: ");
-  Serial.println(gasSensorValue);
-
-  if (gasSensorValue > threshold) {
-    // Blink LED and beep buzzer for alarm effect
-    for (int i = 0; i < 5; i++) {  
-      digitalWrite(ledPin, HIGH);
-      digitalWrite(buzzerPin, HIGH);
-      delay(200);
-      digitalWrite(ledPin, LOW);
-      digitalWrite(buzzerPin, LOW);
-      delay(200);
-    }
-    delay(500); // Short pause before next reading
-  } else {
-    digitalWrite(ledPin, LOW);    
-    digitalWrite(buzzerPin, LOW); 
-  }
-  
-  delay(100); // Small delay for stability
-}
 ## ✅ Results
 
 When the gas concentration exceeds the threshold value (300):
