@@ -87,7 +87,8 @@ void loop() {
   
   delay(100); // Small delay for stability
 }
-✅ Results
+---
+**## ✅ Results**
 
 When the gas concentration exceeds the threshold value (300):
 
