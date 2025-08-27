@@ -87,3 +87,32 @@ void loop() {
   
   delay(100); // Small delay for stability
 }
+✅ Results
+
+When the gas concentration exceeds the threshold value (300):
+
+The LED blinks.
+
+The buzzer beeps.
+
+The alarm stops automatically when the gas concentration falls below the threshold.
+
+The system provides clear visual and audio alerts, indicating a gas leak effectively.
+
+💡 Discussion
+
+The MQ2 sensor is sensitive to multiple gases such as LPG, methane, propane, hydrogen, and smoke.
+
+The Arduino code successfully reads the analog values and triggers the alarm when necessary.
+
+Threshold values can be adjusted according to the type of gas and environmental conditions.
+
+This simple system demonstrates an effective method for early gas leak detection using affordable components.
+
+🏁 Conclusion
+
+The experiment demonstrates a gas leak detection and alarm system using MQ2 and Arduino.
+
+It is cost-effective, easy to set up, and provides early warnings in kitchens, laboratories, or industrial areas.
+
+By adjusting the threshold value and alarm pattern, the system can be customized for real-world safety applications.
