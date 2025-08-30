@@ -36,6 +36,8 @@ To design and simulate a **digital door lock system** using an **ultrasonic sens
 ---
 
 ## ⚡ Circuit Design
+<img width="710" height="494" alt="image" src="https://github.com/user-attachments/assets/773c4cbb-456e-49e7-b636-7a9c63d05400" />
+
 ### 🔗 Connections
 1. **Ultrasonic Sensor (HC-SR04):**  
    - VCC → Arduino **5V**  
